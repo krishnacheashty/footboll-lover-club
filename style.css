@@ -190,7 +190,7 @@ main{
     grid-template-columns: repeat(3 ,1fr);
     margin-top: 70px;
     grid-column-gap: 30px;
-    margin-left: 75px;
+    margin-left: 35px;
 
 
 
@@ -651,7 +651,7 @@ main{
         height: 330px;
         position: absolute;
         top: 325px;
-        left: 18.8%;
+        left: 6.8%;
 
 
     }
