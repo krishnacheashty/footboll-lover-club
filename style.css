@@ -19,9 +19,7 @@ body{
 
 
 /* .................start header section ........................  */
-header{
-    position: relative;
-}
+
 .header-section{
     position: relative;
     width: 100%;
@@ -260,7 +258,7 @@ main{
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
-    color: rgba(128, 128, 128, 0.609);
+    color: rgba(128, 128, 128, 0.808);
 
 
 
@@ -561,45 +559,377 @@ main{
 /* ...................for mobile divice .....................*/
 
 
-@media only screen and (max-width:688px) {
+@media only screen and (min-width:500px) and (max-width:688px) {
 
-    .header-section{
-        position: relative;
-        width: 217%;
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
-    
 
-
-
-
-}
-
-
-
-@media only screen and (min-width:689px) and (max-width:992px){
-    
-    .header-section{
-        position: relative;
-        width: 180%;
-
+    body{
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
     }
-    
-}
 
-
-
-
-
-
- @media only screen and (min-width:992px) and (max-width:1288px){ */
-/*      
     .header-section{
         position: relative;
-        width: 217%;
+        width: 100%;
+        min-height: 790px;
+        background: var(--head2-color);
+        display: flex;
+        flex-direction: column;
+    }
+            
+    nav{
+        display: flex;
+        justify-content:flex-start;
+        width: 80%;
+        margin: 42px auto 0 auto;
+        min-height: 44px;
         
     }
-     
-} */ 
+    
+    .manu-1{
+        display: none;
+    }
+    .manu-2{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .manu-2 a{
+        text-decoration: none;
+        background: #E02C6D;
+        padding: 10px 24px;
+        height: 44px;
+        width: 123px;
+        border-radius: 25px;
+        color: var(--white);
+        transition: .5s;
+    }
+
+    .manu-2 a:hover,
+    .button:hover{
+        background: var(--test-1);
+        color: #000;
+        font-weight: 400;
+        border: 3px solid red;
+    
+}
+.box{
+    position: relative;
+    display: flex;
+}
+.box>.text-1{
+    position: absolute;
+    top: 50px;
+    left: 166px;
+    width: 185px;
+    min-height: 75px;
+    
+}
+
+.box>.text-1>.intro-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 52px;
+    
+}
+
+
+.button{
+    text-decoration: none;
+    padding: 10px 24px;
+    margin-top:7px ;
+    border-radius: 25px;
+    /* border: 2px solid red; */
+    background: #E02C6D;
+    color: #ffff;
+
+
+    
+}
+.box>.cover-pic{
+    width: 280px;
+    height: 330px;
+    position: absolute;
+    top: 325px;
+    left: 18.8%;
+
+
+}
+
+.box>.cover-pic:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.box>.cover-pic>img{
+    width: 280px;
+    height: 320px;
+    position: absolute;
+
+
+}
+ /* ....................end the header section...........................  */ */
+
+/* ................start main section css work........... 
+ */
+
+ main{
+    position: relative;
+    width: 100%;
+    
+
+
+}
+.container{
+    display: grid;
+    grid-template-columns:  1fr;
+    margin-top: 70px;
+    /* grid-column-gap: 30px; */
+    margin-left: 100px;
+
+
+
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    min-height: 474px;
+
+    position: relative;
+    box-shadow:  0 10px 13px #000;
+    border-radius: 10px;
+    margin: 0 0 27px 45px;
+
+}
+.player-name{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+   
+
+
+}
+
+/* ...........end the 2nd section...........  */
+    
+
+
+/* /* ........start match review section../ */
+
+.review-match{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+   
+
+
+}
+
+
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 361px;
+    min-height: 357px;
+    position: absolute;
+    top: 81px;
+    left: 137px;
+}
+.text-section h2{
+    font-size: 28px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+
+}
+/* ........review section > text-section >p css style ............... */
+
+
+.picture-macth {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 440px;
+    left: 121px;
+    box-shadow: 0 8px 12px rgb(31 22 22 / 57%);
+}
+.picture-macth >img{
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    box-shadow: 0 8px 12px  gray;
+    
+       
+}
+
+
+
+
+/* ........end the section............. 
+
+
+
+
+ */
+/* ............... start the video section ..............  */
+
+
+.video-contener {
+    width: 100%;
+    margin-top: 773px;
+}
+.main-text {
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.video-contain{
+    width: 80%;
+    min-height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 550px;
+    background: rgba(139, 136, 136, 0.472);
+    box-shadow: 5px 9px 13px rgba(1, 16, 16, 0.472);
+}
+
+
+.title{
+    text-align: center;
+     margin: 0px 0 10px 0;
+     font-size: 28px;
+
+}
+
+
+.wining-text{
+    margin: 0 25px;
+    text-align: justify;
+    font-size: 20px;
+   
+}
+.containn{
+    display: none;
+}
+
+/* .................. end the video section...............  */
+
+
+
+ /* .................... start the news section..............  */
+
+
+
+ .news-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px 0 0 0;
+}
+
+.new-contaner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  
+    
+
+}
+
+.new-contain{
+   display: flex;
+   flex-direction: column;
+   box-shadow: 5px 9px 12px lightslategrey;
+   height: 500px;
+   overflow: hidden;
+   
+   
+
+}
+.new-contain>img{
+    width: 350px;
+    min-height: 450px;
+    border-radius: 25px;
+    padding: 16px;
+    
+
+}
+
+
+.new-title{
+    margin: 20px 0 10px 16px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 10px;
+
+
+}
+
+
+.button {
+    text-decoration: none;
+    padding: 10px 24px;
+    margin-top: 0px;
+    border-radius: 25px;
+    background: #E02C6D;
+    color: #ffff;
+    text-align: center;
+    width: 29%;
+}
+
+
+/* ........start the fotter section.............  */
+
+
+
+.footer-pic img {
+    margin-top: 2036px;
+    width: 468px;
+    height: 113px;
+}
+.icon-style {
+    position: absolute;
+    display: flex;
+    left: 11%;
+    top: 1881px;
+}
+
+
+.footer-text {
+    font-size: 18px;
+    color: rgba(119, 136, 153, 0.76);
+    font-weight: 500;
+    position: absolute;
+    left: 34%;
+    top: 2200px;
+}
+
+
+
+}
+
+
+
+
 
 
 
