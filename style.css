@@ -351,7 +351,71 @@ main{
 }
 
 /* ........end the section............. 
+
+
+
+
  */
+/* ............... start the video section ..............  */
+.video-contener{
+    width: 100%;
+    margin-top: 150px;
+   
+   
+
+  
+}
+.main-text{
+    font-size: 65px;
+    font-weight: 900;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.video-contain{
+    width: 80%;
+    min-height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 550px;
+    background: darkgrey;
+    /* border: 2px solid #000; */
+    
+   
+}
+
+.title{
+    text-align: center;
+     margin: 0 0 20px 0;
+     font-size: 25px;
+
+}
+
+.wining-text{
+    margin: 0 15px;
+    text-align: justify;
+    font-size: 18px;
+   
+}
+
+
+/* .................. end the video section...............  */
+
+
+
+
+
+
+
+
 
 
 
