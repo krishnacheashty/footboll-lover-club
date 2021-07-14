@@ -313,7 +313,7 @@ main{
 
 
 
-.picture-macth{
+.picture-match{
 
     width: 567px;
     height: 427px;
@@ -326,7 +326,7 @@ main{
     
 }
 
-.picture-macth >img{
+.picture-match >img{
     width: 567px;
     height: 427px;
     position: absolute;
@@ -553,24 +553,7 @@ main{
 /* ...................for mobile divice .....................*/
 
 
-@media only screen and (min-width:500px) and (max-width:688px) {
-
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-
-
-
-    body{
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-    }
-
-
-
+@media only screen and (max-width:550px) {
 
     .header-section{
         position: relative;
