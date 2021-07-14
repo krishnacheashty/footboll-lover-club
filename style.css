@@ -216,7 +216,6 @@ main{
 
     width: 300px;
     min-height: 256px;
-    /* border: 3px solid red; */
     border-radius: 25px;
     margin: 15px 15px;
     transition: .3s;
@@ -225,23 +224,9 @@ main{
 .player-pic img:hover{
     transform: scale(1.09);
 }
-/* .player-pic img::after{
-    content: " ";
-    width: 0%;
-    background: #97CAEF;
-    opacity: 0;
-    transition: 0.5s;
 
-}
-.player-pic img:hover::after{
-    width: 100%;
-    transform: scaleX(1.3); */
-
-/* } */
 .text{
-    /* border: 2px solid blue; */
     margin: 0 15px;
-
 
 }
 
@@ -347,7 +332,11 @@ main{
     position: absolute;
     position: absolute;
     box-shadow: 0 8px 12px  gray;
+    transition: .5s;
        
+}
+.picture-macth >img:hover{
+    transform: rotateZ(-30deg);
 }
 
 /* ........end the section............. 
@@ -396,6 +385,7 @@ main{
     text-align: center;
      margin: 0 0 20px 0;
      font-size: 25px;
+     color:black;
 
 }
 
@@ -463,10 +453,10 @@ main{
 
 
  .new-title{
-     margin: 20px 0 10px 16px;
-     font-size: 24px;
-     font-weight: 700;
-     padding: 0;10px
+     margin: 20px 0 0px 16px;
+     font-size: 22px;
+     font-weight: 600;
+     padding: 0 10px;
 
 
  }
@@ -474,7 +464,7 @@ main{
 .news-1{
     margin-bottom: 30px;
     margin: 0 0 30px 16px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     color: lightslategray;
 
@@ -482,6 +472,7 @@ main{
 
 
 .new-contain>a{
+    margin-bottom: 30px;
     margin-left: 16px;
 }
 
@@ -491,6 +482,9 @@ main{
 
 
 /* ........start the fotter section.............  */
+
+
+
 .footer{
     width: 100%;
     min-height: 231px;
@@ -511,7 +505,7 @@ main{
 }
 .footer-pic img{
     margin-top: 158px;
-    width: 484px;
+    width: 480px;
     height: 110px;
 }
 
@@ -526,7 +520,7 @@ main{
     height: 32px;
     margin-bottom: 20px;
     position: absolute;
-    left: 47%;
+    left: 43%;
 
     
 
@@ -545,14 +539,14 @@ main{
     color: rgba(119, 136, 153, 0.76);
     font-weight: 500;
     position: absolute;
-    left: 45%;
+    left: 42%;
     top: 310px;
 }
 
 
 
 
-/* .................... media quires ................ */
+/* .................... media query start................ */
 
 
 
@@ -567,10 +561,16 @@ main{
         box-sizing: border-box;
     }
 
+
+
+
     body{
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
     }
+
+
+
 
     .header-section{
         position: relative;
@@ -580,6 +580,9 @@ main{
         display: flex;
         flex-direction: column;
     }
+
+
+
             
     nav{
         display: flex;
@@ -589,14 +592,21 @@ main{
         min-height: 44px;
         
     }
+
+
     
     .manu-1{
         display: none;
     }
+
+
+
     .manu-2{
         display: flex;
         justify-content: flex-end;
     }
+
+
     .manu-2 a{
         text-decoration: none;
         background: #E02C6D;
@@ -608,18 +618,16 @@ main{
         transition: .5s;
     }
 
-    .manu-2 a:hover,
-    .button:hover{
-        background: var(--test-1);
-        color: #000;
-        font-weight: 400;
-        border: 3px solid red;
     
-}
+
+
 .box{
     position: relative;
     display: flex;
 }
+
+
+
 .box>.text-1{
     position: absolute;
     top: 50px;
@@ -652,6 +660,9 @@ main{
 
     
 }
+
+
+
 .box>.cover-pic{
     width: 280px;
     height: 330px;
@@ -662,9 +673,13 @@ main{
 
 }
 
-.box>.cover-pic:hover{
-    transform: scale(1.1) rotate(5deg);
-}
+
+
+
+
+
+
+
 
 .box>.cover-pic>img{
     width: 280px;
@@ -678,13 +693,11 @@ main{
 /* ................start main section css work........... 
  */
 
- main{
-    position: relative;
-    width: 100%;
-    
 
 
-}
+
+
+
 .container{
     display: grid;
     grid-template-columns:  1fr;
@@ -695,6 +708,11 @@ main{
 
 
 }
+
+
+
+
+
 .contain{
     display: flex;
     flex-direction: column;
@@ -707,6 +725,10 @@ main{
     margin: 0 0 27px 45px;
 
 }
+
+
+
+
 .player-name{
     font-size: 18px;
     line-height: 20px;
@@ -721,6 +743,9 @@ main{
 
 
 /* /* ........start match review section../ */
+
+
+
 
 .review-match{
     display: flex;
@@ -744,6 +769,9 @@ main{
     top: 81px;
     left: 137px;
 }
+
+
+
 .text-section h2{
     font-size: 28px;
     line-height: 30px;
@@ -762,6 +790,9 @@ main{
     left: 121px;
     box-shadow: 0 8px 12px rgb(31 22 22 / 57%);
 }
+
+
+
 .picture-macth >img{
     width: 400px;
     height: 450px;
@@ -787,6 +818,8 @@ main{
     width: 100%;
     margin-top: 773px;
 }
+
+
 .main-text {
     font-size: 45px;
     font-weight: 700;
@@ -796,6 +829,9 @@ main{
     align-items: center;
     margin-bottom: 50px;
 }
+
+
+
 .video-contain{
     width: 80%;
     min-height: 550px;
@@ -902,7 +938,7 @@ main{
 
 
 .footer-pic img {
-    margin-top: 2036px;
+    margin-top: 2136px;
     width: 468px;
     height: 113px;
 }
@@ -910,7 +946,7 @@ main{
     position: absolute;
     display: flex;
     left: 11%;
-    top: 1881px;
+    top: 1981px;
 }
 
 
@@ -920,13 +956,15 @@ main{
     font-weight: 500;
     position: absolute;
     left: 34%;
-    top: 2200px;
+    top: 2300px;
 }
 
 
 
 }
 
+
+/* ................end media quary............................. */
 
 
 
